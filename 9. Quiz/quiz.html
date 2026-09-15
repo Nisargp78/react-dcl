@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .quizContainer {
+        height: 400px;
+        width: 500px;
+        border: 2px solid black;
+        background-color: bisque;
+        border-radius: 30px;
+        margin: auto;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0px 30px;
+      }
+      .ans {
+        font-size: 22px;
+      }
+      .ques {
+        align-self: flex-start;
+        font-size: 32px;
+      }
+      .btnContainer {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .btnContainer button {
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: purple;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div class="quizContainer flex">
+      <h2 class="ques">What is HTML ?</h2>
+      <p class="ans">
+        HTML is the most basic building block of web , it is used to embed the
+        content into the webpage
+      </p>
+      <div class="btnContainer flex">
+        <button class="prev">Prev</button>
+        <button class="next">Next</button>
+      </div>
+    </div>
+
+    <script>
+      let quiz = [
+        {
+          ques: "What is HTML?",
+          ans: `HTML is the most basic building block of the web. It is used to structure and
+    embed content into a webpage.`,
+        },
+        {
+          ques: "What is CSS?",
+          ans: `CSS stands for Cascading Style Sheets. It is used to style and design the
+    appearance of HTML elements on a webpage.`,
+        },
+        {
+          ques: "What is JavaScript?",
+          ans: `JavaScript is a programming language used to make web pages interactive
+    and dynamic.`,
+        },
+        {
+          ques: "What is an HTML element?",
+          ans: `An HTML element is a complete part of an HTML document, usually consisting
+    of an opening tag, content, and a closing tag.`,
+        },
+        {
+          ques: "What is an HTML tag?",
+          ans: `An HTML tag is a keyword enclosed in angle brackets that tells the browser
+    how to structure or display content.`,
+        },
+        {
+          ques: "What is an attribute in HTML?",
+          ans: `An HTML attribute provides additional information about an HTML element.
+    Attributes are usually written inside the opening tag.`,
+        },
+        {
+          ques: "What is the purpose of the <head> tag?",
+          ans: `The <head> tag contains information about the webpage, such as the title,
+    metadata, stylesheets, and scripts.`,
+        },
+        {
+          ques: "What is the purpose of the <body> tag?",
+          ans: `The <body> tag contains the visible content of a webpage, such as headings,
+    paragraphs, images, links, and buttons.`,
+        },
+        {
+          ques: "What is a hyperlink in HTML?",
+          ans: `A hyperlink is a clickable link that allows users to navigate from one
+    webpage or resource to another.`,
+        },
+        {
+          ques: "What is the use of the <img> tag?",
+          ans: `The <img> tag is used to display an image on a webpage. It commonly uses
+    the src attribute to specify the image location.`,
+        },
+        {
+          ques: "What is a CSS selector?",
+          ans: `A CSS selector is used to target specific HTML elements so that styles can
+    be applied to them.`,
+        },
+        {
+          ques: "What is the CSS box model?",
+          ans: `The CSS box model describes how an HTML element is represented as a box
+    consisting of content, padding, border, and margin.`,
+        },
+        {
+          ques: "What is a variable in JavaScript?",
+          ans: `A variable in JavaScript is a named container used to store data values
+    that can be accessed and used in a program.`,
+        },
+        {
+          ques: "What is a function in JavaScript?",
+          ans: `A function is a reusable block of code designed to perform a particular
+    task. It can be called whenever that task needs to be performed.`,
+        },
+        {
+          ques: "What is the DOM?",
+          ans: `DOM stands for Document Object Model. It represents an HTML document as a
+    tree of objects that JavaScript can access and manipulate.`,
+        },
+        {
+          ques: "What is responsive web design?",
+          ans: `Responsive web design is an approach that makes a website adapt its layout
+    and content to different screen sizes and devices.`,
+        },
+        {
+          ques: "What is an API?",
+          ans: `API stands for Application Programming Interface. It allows different
+    software applications or services to communicate with each other.`,
+        },
+        {
+          ques: "What is Git?",
+          ans: `Git is a distributed version control system used to track changes in source
+    code and help developers collaborate on projects.`,
+        },
+        {
+          ques: "What is GitHub?",
+          ans: `GitHub is a platform for hosting Git repositories and collaborating on
+    software projects using features such as pull requests and issues.`,
+        },
+        {
+          ques: "What is a frontend?",
+          ans: `Frontend refers to the part of a website or application that users see
+    and interact with directly in their browser.`,
+        },
+      ];
+
+      let index = 0;
+      let prev = document.querySelector(".prev");
+      let ques = document.querySelector(".ques");
+      let ans = document.querySelector(".ans");
+      let next = document.querySelector(".next");
+      prev.addEventListener("click", () => {
+        if (index > 0) {
+          index = index - 1;
+          ques.innerHTML = quiz[index].ques;
+          ans.innerHTML = quiz[index].ans;
+        }
+      });
+      next.addEventListener("click", () => {
+        if (index < quiz.length) {
+          index = index + 1;
+          ques.innerHTML = quiz[index].ques;
+          ans.innerHTML = quiz[index].ans;
+        }
+      });
+    </script>
+  </body>
+</html>

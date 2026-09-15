@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Sony WH-CH520",
+      "image": "https://i.ibb.co/wNFXvtdC/Top-image-WH-CH520-removebg-preview.png",
+      "description": "High-quality wireless headphones with noise cancellation and deep bass.",
+      "price": 3955,
+      "mfg": "2025",
+      "qty": 5
+    },
+    {
+      "id": "2",
+      "name": "Fitbit Versa 3",
+      "image": "https://lh3.googleusercontent.com/vN8Q3cTaRqB0c6pw3QjOt2MRS73PNmiPWKnemBv2YXUY4HhYSG85c7mYoWAxih9nz9L3kbVeMGM2xqJM9YM73O_Zi1h_RsSr8Xo=s6000-w6000-e365-rw-v0-nu",
+      "description": "Smart watch with fitness tracking, heart rate monitoring and notifications.",
+      "price": 16999,
+      "mfg": "2023",
+      "qty": 18
+    },
+    {
+      "id": "3",
+      "name": "Marshall Emberton III",
+      "image": "https://media-ik.croma.com/Croma%20Assets/Entertainment/Speakers%20and%20Media%20Players/Images/310955_0_TbsHXwLlC.png?updatedAt=1766428269250&tr=w-640",
+      "description": "Portable Bluetooth speaker with powerful sound and long battery life.",
+      "price": 17999,
+      "mfg": "2025",
+      "qty": 10
+    }
+  ],
+  "cart": [
+    {
+      "id": "tqgZ1L2Yutc",
+      "name": "Sony WH-CH520",
+      "image": "https://i.ibb.co/wNFXvtdC/Top-image-WH-CH520-removebg-preview.png",
+      "description": "High-quality wireless headphones with noise cancellation and deep bass.",
+      "price": 3955,
+      "mfg": "2025",
+      "qty": 5
+    }
+  ],
+  "users": [
+    {
+      "username": "Nisarg",
+      "password": "niafnurh",
+      "gender": "male",
+      "email": "nisargprajapati54@gmail.com",
+      "subject": "react",
+      "id": "sg0J2n8ySbo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

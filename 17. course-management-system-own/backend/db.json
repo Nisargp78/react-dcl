@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "username": "Nisarg",
+      "email": "nisargprajapati54@gmail.com",
+      "password": "$2b$10$1nIr51dpi.NF9jZICUyq2OEipm48wJv12y/gyB.e0mf.wqWsDpJ/u",
+      "gender": "male",
+      "role": "user",
+      "id": "a85hm4-yCKs"
+    },
+    {
+      "username": "Admin",
+      "email": "admin@gmail.com",
+      "password": "$2b$10$1nIr51dpi.NF9jZICUyq2OEipm48wJv12y/gyB.e0mf.wqWsDpJ/u",
+      "gender": "male",
+      "role": "admin",
+      "id": "s05hm2-fGLs"
+    }
+  ],
+  "courses": [
+    {
+      "cName": "React",
+      "cImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXjFa376jAjBGIBxI5lPott7QWUJCHd5mFo4Aa15nqfw&s=10",
+      "cTrainer": "Akshay Sir",
+      "cPrice": 8998,
+      "cDesc": "Best React Course",
+      "cDuration": 1,
+      "id": "enmYBOTSoTY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

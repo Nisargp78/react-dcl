@@ -1,4 +1,4 @@
-import VegetableList from './components/vegetableList'
+import VegetableList from './components/VegetableList'
 
 const App = () => {
   return (

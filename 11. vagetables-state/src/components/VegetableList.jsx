@@ -1,5 +1,5 @@
 import { useState } from "react";
-import VegetableCard from "./vegetableCard";
+import VegetableCard from "./VegetableCard";
 
 let vegetables = [
   { id: 1, name: "Tomato" },
